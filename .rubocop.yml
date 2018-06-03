@@ -2,3 +2,4 @@ AllCops:
   TargetRubyVersion: 2.4
   DisplayCopNames: false
   DisplayStyleGuide: true
+  RunRailsCops: true
