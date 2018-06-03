@@ -36,8 +36,16 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Use jquery as the JavaScript library
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+# World's most popular front-end component library
+gem 'bootstrap', '~> 4.1.0'
+
 # Easily generate fake data: names, addresses, phone numbers, etc.
 gem 'faker', '~> 1.8', '>= 1.8.7'
+
+# Agnostic pagination in plain Ruby
+gem 'pagy', '~> 0.8.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
