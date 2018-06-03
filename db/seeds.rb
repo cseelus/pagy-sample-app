@@ -17,7 +17,7 @@ end
 
 100.times do
   Nebula.create(
-    name: Faker::Space.nebula,
+    name: Faker::Space.star_cluster,
     group: [
       'H II region',
       'Planetary nebulae',
