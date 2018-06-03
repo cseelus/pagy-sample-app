@@ -1,0 +1,2 @@
+class Nebula < ApplicationRecord
+end
