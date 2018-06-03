@@ -1,0 +1,31 @@
+.pagy-nav-bootstrap-compact
+  @extend .justify-content-center
+  position: relative
+  margin: 60px 0
+  .prev,
+  .next,
+  .pagy-compact-input
+    @extend .btn-outline-light
+  .prev,
+  .next,
+    font-family: FontAwesome
+    font-size: 1.25rem
+    line-height: 1.6rem
+    padding-right: 1rem
+    padding-left: 1rem
+  .pagy-compact-input
+    color: $body-color !important
+    opacity: 1
+    background: transparent !important
+    input
+      @extend .form-control
+      display: inline
+      color: $body-color
+      font-weight: bold
+      background: transparent
+      border: 1px solid rgba(white, 0.5) !important
+      -webkit-appearance: none
+      -moz-appearance: textfield
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button
+        -webkit-appearance: none

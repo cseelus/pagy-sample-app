@@ -16,4 +16,5 @@
 //= require turbolinks
 //= require popper
 //= require bootstrap
+//= require pagy-compact
 //= require_tree .

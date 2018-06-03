@@ -40,6 +40,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 # World's most popular front-end component library
 gem 'bootstrap', '~> 4.1.0'
+# Font Awesome icons
+gem 'font-awesome-rails', '~> 4.7.0.1'
 
 # Easily generate fake data: names, addresses, phone numbers, etc.
 gem 'faker', '~> 1.8', '>= 1.8.7'

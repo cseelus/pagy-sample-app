@@ -17,7 +17,7 @@ end
 
 100.times do
   Nebula.create(
-    name: Faker::Space.star_cluster,
+    name: Faker::Space.meteorite, # using meteorites, bc too little nebulae in dataset
     group: [
       'H II region',
       'Planetary nebulae',

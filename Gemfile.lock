@@ -84,6 +84,8 @@ GEM
     faker (1.8.7)
       i18n (>= 0.7)
     ffi (1.9.23)
+    font-awesome-rails (4.7.0.4)
+      railties (>= 3.2, < 6.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.0.1)
@@ -213,6 +215,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   faker (~> 1.8, >= 1.8.7)
+  font-awesome-rails (~> 4.7.0.1)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.1)
   listen (>= 3.0.5, < 3.2)
