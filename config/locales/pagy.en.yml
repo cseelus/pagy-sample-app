@@ -1,8 +1,8 @@
 en:
   pagy:
     nav:
-      prev: "&#XF104;"
-      next: "&#XF105;"
+      prev: "<"
+      next: ">"
       gap: "&hellip;"
     info:
       single_page:
