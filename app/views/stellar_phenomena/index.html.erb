@@ -1,27 +1,51 @@
 <h1 class="display-4">Stellar Phenomena</h1>
 
-<table class="table">
-  <tr>
-    <th width="50%">Name</th>
-    <th>Radius (Solar radii)</th>
-  </tr>
-  <% @stars.each do |star| %>
-    <tr>
-      <td><%= star.name %></td>
-      <td><%= star.radius %></td>
-    </tr>
-  <% end %>
-</table>
 
-<table class="table">
-  <tr>
-    <th width="50%">Name</th>
-    <th>Type/Group</th>
-  </tr>
-  <% @nebulae.each do |nebula| %>
-    <tr>
-      <td><%= nebula.name %></td>
-      <td><%= nebula.group %></td>
-    </tr>
-  <% end %>
-</table>
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link <%= 'active' unless params[:active_tab] == 'nebulae' %>" aria-controls="stars" data-toggle="tab" href="#stars" role="tab">
+      Stars
+    </a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link <%= 'active' if params[:active_tab] == 'nebulae' %>" aria-controls="nebulae" data-toggle="tab" href="#nebulae" role="tab">
+      Nebulae
+    </a>
+  </li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane <%= 'active' unless params[:active_tab] == 'nebulae' %>" id="stars">
+    <h2 class="mt-3 mb-2">Stars</h2>
+    <table class="table">
+      <tr>
+        <th width="50%">Name</th>
+        <th>Radius (Solar radii)</th>
+      </tr>
+      <% @stars.each do |star| %>
+        <tr>
+          <td><%= star.name %></td>
+          <td><%= star.radius %></td>
+        </tr>
+      <% end %>
+    </table>
+    <%== pagy_nav_bootstrap_compact @pagy_stars %>
+  </div>
+
+  <div class="tab-pane <%= 'active' if params[:active_tab] == 'nebulae' %>" id="nebulae">
+    <h2 class="mt-3 mb-2">Nebulae</h2>
+    <table class="table">
+      <tr>
+        <th width="50%">Name</th>
+        <th>Type/Group</th>
+      </tr>
+      <% @nebulae.each do |nebula| %>
+        <tr>
+          <td><%= nebula.name %></td>
+          <td><%= nebula.group %></td>
+        </tr>
+      <% end %>
+    </table>
+    <%== pagy_nav_bootstrap_compact @pagy_nebulae %>
+  </div>
+</div>
