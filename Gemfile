@@ -37,7 +37,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 # World's most popular front-end component library
-gem 'bootstrap', '~> 4.1.0'
+gem 'bootstrap', '~> 4.3.1'
 
 # Easily generate fake data: names, addresses, phone numbers, etc.
 gem 'faker', '~> 1.8', '>= 1.8.7'
